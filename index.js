@@ -22,7 +22,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let li = document.createElement("li");
     li.className = "user"
 
-    li.textContent = user.lname+ ", " + user.fname;
+    li.textContent =
+      user.lname.replace(/\b\w/g, (l) => l.toUpperCase()) 
+      + ", " +
+      user.fname.replace(/\b\w/g, (l) => l.toUpperCase());
     ul.appendChild(li);
   });
 

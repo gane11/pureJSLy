@@ -5,6 +5,20 @@ body {
 .users_list {
     background-color: white;
     list-style: none;
+    width: 15rem;
+    height: 12rem;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+    margin: auto;
+}
+
+.user {
+    padding: 10px 5px;
+    margin-left: -2rem;
 }
 
 .user:hover {
