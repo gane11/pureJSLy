@@ -12,15 +12,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     { fname: "bettino", lname: "yang", id: 3789204, isTherapist: true },
   ];
 
-  const container = document.getElementById("container");
+  const container = document.getElementById("users_container");
   const ul = document.createElement("ul");
+  ul.className = "users_list"
 
   console.log(container);
 
   users.forEach(function (user) {
     let li = document.createElement("li");
+    li.className = "user"
 
-    li.textContent = user.fname + ", " + user.lname;
+    li.textContent = user.lname+ ", " + user.fname;
     ul.appendChild(li);
   });
 
